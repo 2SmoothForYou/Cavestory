@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		315323AB1D19B721003E37E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323AA1D19B721003E37E3 /* main.cpp */; };
+		315323B21D19B754003E37E3 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315323B11D19B754003E37E3 /* SDL2.framework */; };
+		315323B81D19BAB9003E37E3 /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323B71D19BAB9003E37E3 /* graphics.cpp */; };
+		315323BB1D19C0C7003E37E3 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323BA1D19C0C7003E37E3 /* game.cpp */; };
+		315323BE1D19C6DD003E37E3 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323BD1D19C6DD003E37E3 /* input.cpp */; };
+		315323C41D19D393003E37E3 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315323C21D19D393003E37E3 /* SDL2_image.framework */; };
+		315323C51D19D393003E37E3 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315323C31D19D393003E37E3 /* SDL2_ttf.framework */; };
+		315323C81D19DEC6003E37E3 /* sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323C71D19DEC6003E37E3 /* sprite.cpp */; };
+		315323CD1D1A2734003E37E3 /* animatedsprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323CC1D1A2734003E37E3 /* animatedsprite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,21 @@
 /* Begin PBXFileReference section */
 		315323A71D19B721003E37E3 /* Cavestory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cavestory; sourceTree = BUILT_PRODUCTS_DIR; };
 		315323AA1D19B721003E37E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		315323B11D19B754003E37E3 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		315323B61D19B967003E37E3 /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graphics.h; sourceTree = "<group>"; };
+		315323B71D19BAB9003E37E3 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphics.cpp; sourceTree = "<group>"; };
+		315323B91D19BFA9003E37E3 /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		315323BA1D19C0C7003E37E3 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		315323BC1D19C48D003E37E3 /* input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		315323BD1D19C6DD003E37E3 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		315323C21D19D393003E37E3 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		315323C31D19D393003E37E3 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		315323C61D19DDCB003E37E3 /* sprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sprite.h; sourceTree = "<group>"; };
+		315323C71D19DEC6003E37E3 /* sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sprite.cpp; sourceTree = "<group>"; };
+		315323C91D19F940003E37E3 /* MyChar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyChar.png; sourceTree = "<group>"; };
+		315323CA1D19FA25003E37E3 /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		315323CB1D19FD93003E37E3 /* animatedsprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animatedsprite.h; sourceTree = "<group>"; };
+		315323CC1D1A2734003E37E3 /* animatedsprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = animatedsprite.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315323C41D19D393003E37E3 /* SDL2_image.framework in Frameworks */,
+				315323C51D19D393003E37E3 /* SDL2_ttf.framework in Frameworks */,
+				315323B21D19B754003E37E3 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +67,9 @@
 		3153239E1D19B721003E37E3 = {
 			isa = PBXGroup;
 			children = (
+				315323C21D19D393003E37E3 /* SDL2_image.framework */,
+				315323C31D19D393003E37E3 /* SDL2_ttf.framework */,
+				315323B11D19B754003E37E3 /* SDL2.framework */,
 				315323A91D19B721003E37E3 /* Cavestory */,
 				315323A81D19B721003E37E3 /* Products */,
 			);
@@ -57,9 +86,53 @@
 		315323A91D19B721003E37E3 /* Cavestory */ = {
 			isa = PBXGroup;
 			children = (
-				315323AA1D19B721003E37E3 /* main.cpp */,
+				315323BF1D19CF36003E37E3 /* content */,
+				315323B51D19B923003E37E3 /* src */,
+				315323B41D19B91F003E37E3 /* header */,
 			);
 			path = Cavestory;
+			sourceTree = "<group>";
+		};
+		315323B41D19B91F003E37E3 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				315323B61D19B967003E37E3 /* graphics.h */,
+				315323B91D19BFA9003E37E3 /* game.h */,
+				315323BC1D19C48D003E37E3 /* input.h */,
+				315323C61D19DDCB003E37E3 /* sprite.h */,
+				315323CA1D19FA25003E37E3 /* globals.h */,
+				315323CB1D19FD93003E37E3 /* animatedsprite.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		315323B51D19B923003E37E3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				315323AA1D19B721003E37E3 /* main.cpp */,
+				315323B71D19BAB9003E37E3 /* graphics.cpp */,
+				315323BA1D19C0C7003E37E3 /* game.cpp */,
+				315323BD1D19C6DD003E37E3 /* input.cpp */,
+				315323C71D19DEC6003E37E3 /* sprite.cpp */,
+				315323CC1D1A2734003E37E3 /* animatedsprite.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		315323BF1D19CF36003E37E3 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				315323C01D19CF3D003E37E3 /* sprites */,
+			);
+			name = content;
+			sourceTree = "<group>";
+		};
+		315323C01D19CF3D003E37E3 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				315323C91D19F940003E37E3 /* MyChar.png */,
+			);
+			name = sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315323B81D19BAB9003E37E3 /* graphics.cpp in Sources */,
 				315323AB1D19B721003E37E3 /* main.cpp in Sources */,
+				315323BE1D19C6DD003E37E3 /* input.cpp in Sources */,
+				315323CD1D1A2734003E37E3 /* animatedsprite.cpp in Sources */,
+				315323BB1D19C0C7003E37E3 /* game.cpp in Sources */,
+				315323C81D19DEC6003E37E3 /* sprite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +287,10 @@
 		315323AF1D19B721003E37E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +298,10 @@
 		315323B01D19B721003E37E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
