@@ -16,6 +16,9 @@
 		315323C51D19D393003E37E3 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315323C31D19D393003E37E3 /* SDL2_ttf.framework */; };
 		315323C81D19DEC6003E37E3 /* sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323C71D19DEC6003E37E3 /* sprite.cpp */; };
 		315323CD1D1A2734003E37E3 /* animatedsprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323CC1D1A2734003E37E3 /* animatedsprite.cpp */; };
+		315323D01D1C73E4003E37E3 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323CF1D1C73E4003E37E3 /* player.cpp */; };
+		315323D41D1C8BFA003E37E3 /* level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323D31D1C8BFA003E37E3 /* level.cpp */; };
+		315323DF1D1CA87A003E37E3 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323DE1D1CA87A003E37E3 /* tinyxml2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,10 +47,19 @@
 		315323C31D19D393003E37E3 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		315323C61D19DDCB003E37E3 /* sprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sprite.h; sourceTree = "<group>"; };
 		315323C71D19DEC6003E37E3 /* sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sprite.cpp; sourceTree = "<group>"; };
-		315323C91D19F940003E37E3 /* MyChar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyChar.png; sourceTree = "<group>"; };
 		315323CA1D19FA25003E37E3 /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
 		315323CB1D19FD93003E37E3 /* animatedsprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animatedsprite.h; sourceTree = "<group>"; };
 		315323CC1D1A2734003E37E3 /* animatedsprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = animatedsprite.cpp; sourceTree = "<group>"; };
+		315323CE1D1C72F7003E37E3 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		315323CF1D1C73E4003E37E3 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		315323D11D1C8A15003E37E3 /* MyChar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MyChar.png; path = "../../../../Users/jaimericart/Library/Developer/Xcode/DerivedData/Cavestory-fnbujeikcoufrhbyfcxvhohsjmye/Build/Products/Debug/MyChar.png"; sourceTree = DEVELOPER_DIR; };
+		315323D21D1C8AE1003E37E3 /* level.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = level.h; sourceTree = "<group>"; };
+		315323D31D1C8BFA003E37E3 /* level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = level.cpp; sourceTree = "<group>"; };
+		315323D71D1C8E6E003E37E3 /* bkBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bkBlue.png; path = "../../../../Library/Developer/Xcode/DerivedData/Cavestory-fnbujeikcoufrhbyfcxvhohsjmye/Build/Products/Debug/bkBlue.png"; sourceTree = "<group>"; };
+		315323DA1D1C98C4003E37E3 /* PrtCave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PrtCave.png; path = "../../../../Library/Developer/Xcode/DerivedData/Cavestory-fnbujeikcoufrhbyfcxvhohsjmye/Build/Products/Debug/PrtCave.png"; sourceTree = "<group>"; };
+		315323DC1D1CA7EE003E37E3 /* Map 1.tmx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Map 1.tmx"; path = "../../../../Library/Developer/Xcode/DerivedData/Cavestory-fnbujeikcoufrhbyfcxvhohsjmye/Build/Products/Debug/Map 1.tmx"; sourceTree = "<group>"; };
+		315323DD1D1CA870003E37E3 /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		315323DE1D1CA87A003E37E3 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +108,15 @@
 		315323B41D19B91F003E37E3 /* header */ = {
 			isa = PBXGroup;
 			children = (
+				315323DD1D1CA870003E37E3 /* tinyxml2.h */,
 				315323B61D19B967003E37E3 /* graphics.h */,
 				315323B91D19BFA9003E37E3 /* game.h */,
 				315323BC1D19C48D003E37E3 /* input.h */,
 				315323C61D19DDCB003E37E3 /* sprite.h */,
 				315323CA1D19FA25003E37E3 /* globals.h */,
 				315323CB1D19FD93003E37E3 /* animatedsprite.h */,
+				315323CE1D1C72F7003E37E3 /* player.h */,
+				315323D21D1C8AE1003E37E3 /* level.h */,
 			);
 			name = header;
 			sourceTree = "<group>";
@@ -109,12 +124,15 @@
 		315323B51D19B923003E37E3 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				315323DE1D1CA87A003E37E3 /* tinyxml2.cpp */,
 				315323AA1D19B721003E37E3 /* main.cpp */,
 				315323B71D19BAB9003E37E3 /* graphics.cpp */,
 				315323BA1D19C0C7003E37E3 /* game.cpp */,
 				315323BD1D19C6DD003E37E3 /* input.cpp */,
 				315323C71D19DEC6003E37E3 /* sprite.cpp */,
 				315323CC1D1A2734003E37E3 /* animatedsprite.cpp */,
+				315323CF1D1C73E4003E37E3 /* player.cpp */,
+				315323D31D1C8BFA003E37E3 /* level.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -122,6 +140,9 @@
 		315323BF1D19CF36003E37E3 /* content */ = {
 			isa = PBXGroup;
 			children = (
+				315323D91D1C97FB003E37E3 /* maps */,
+				315323D81D1C97EE003E37E3 /* tilesets */,
+				315323D51D1C8E3B003E37E3 /* backgrounds */,
 				315323C01D19CF3D003E37E3 /* sprites */,
 			);
 			name = content;
@@ -130,9 +151,33 @@
 		315323C01D19CF3D003E37E3 /* sprites */ = {
 			isa = PBXGroup;
 			children = (
-				315323C91D19F940003E37E3 /* MyChar.png */,
+				315323D11D1C8A15003E37E3 /* MyChar.png */,
 			);
 			name = sprites;
+			sourceTree = "<group>";
+		};
+		315323D51D1C8E3B003E37E3 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				315323D71D1C8E6E003E37E3 /* bkBlue.png */,
+			);
+			name = backgrounds;
+			sourceTree = "<group>";
+		};
+		315323D81D1C97EE003E37E3 /* tilesets */ = {
+			isa = PBXGroup;
+			children = (
+				315323DA1D1C98C4003E37E3 /* PrtCave.png */,
+			);
+			name = tilesets;
+			sourceTree = "<group>";
+		};
+		315323D91D1C97FB003E37E3 /* maps */ = {
+			isa = PBXGroup;
+			children = (
+				315323DC1D1CA7EE003E37E3 /* Map 1.tmx */,
+			);
+			name = maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315323DF1D1CA87A003E37E3 /* tinyxml2.cpp in Sources */,
 				315323B81D19BAB9003E37E3 /* graphics.cpp in Sources */,
 				315323AB1D19B721003E37E3 /* main.cpp in Sources */,
+				315323D41D1C8BFA003E37E3 /* level.cpp in Sources */,
 				315323BE1D19C6DD003E37E3 /* input.cpp in Sources */,
 				315323CD1D1A2734003E37E3 /* animatedsprite.cpp in Sources */,
 				315323BB1D19C0C7003E37E3 /* game.cpp in Sources */,
 				315323C81D19DEC6003E37E3 /* sprite.cpp in Sources */,
+				315323D01D1C73E4003E37E3 /* player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

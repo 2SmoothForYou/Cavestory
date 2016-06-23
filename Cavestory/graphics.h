@@ -12,6 +12,7 @@
 #include <map>
 #include <string>
 #include <SDL2_image/SDL_image.h>
+#include <SDL2/SDL.h>
 
 struct SDL_Window;
 struct SDL_Renderer;
