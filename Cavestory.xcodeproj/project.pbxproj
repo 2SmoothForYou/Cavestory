@@ -35,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		31344CA81D1CEF02006EB00E /* rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rectangle.h; sourceTree = "<group>"; };
 		315323A71D19B721003E37E3 /* Cavestory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cavestory; sourceTree = BUILT_PRODUCTS_DIR; };
 		315323AA1D19B721003E37E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		315323B11D19B754003E37E3 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 				315323CE1D1C72F7003E37E3 /* player.h */,
 				315323D21D1C8AE1003E37E3 /* level.h */,
 				315323E01D1CAC1C003E37E3 /* tile.h */,
+				31344CA81D1CEF02006EB00E /* rectangle.h */,
 			);
 			name = header;
 			sourceTree = "<group>";
@@ -379,6 +381,7 @@
 				315323B01D19B721003E37E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

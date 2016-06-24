@@ -1,37 +1,31 @@
-//
-//  level.h
-//  Cavestory
-//
-//  Created by Jaime Ricart on 6/23/16.
-//  Copyright © 2016 Jaime Ricart. All rights reserved.
-//
+#ifndef LEVEL_H
+#define LEVEL_H
 
-#ifndef level_h
-#define level_h
+#include <string>
+#include <vector>
 
 #include "globals.h"
-#include <string>
 #include "tile.h"
-#include <vector>
+#include "rectangle.h"
 
 class Graphics;
 struct SDL_Texture;
 struct SDL_Rect;
 struct Tileset;
 
-class Level{
-    
+class Level {
 public:
-    
     Level();
     Level(std::string mapName, Vector2 spawnPoint, Graphics &graphics);
     ~Level();
-    
     void update(int elapsedTime);
     void draw(Graphics &graphics);
     
-private:
+    std::vector<Rectangle> checkTileCollisions(const Rectangle &other);
     
+    const Vector2 getPlayerSpawnPoint() const;
+    
+private:
     std::string _mapName;
     Vector2 _spawnPoint;
     
@@ -42,28 +36,29 @@ private:
     
     std::vector<Tile> _tileList;
     std::vector<Tileset> _tilesets;
+    std::vector<Rectangle> _collisionRects;
     
+    /* void loadMap
+     * Loads a map
+     */
     void loadMap(std::string mapName, Graphics &graphics);
     
 };
 
-struct Tileset{
-    
+//Tileset structure
+struct Tileset {
     SDL_Texture* Texture;
     int FirstGid;
-    
-    Tileset(){
-        
-        this->FirstGid = 1;
-        
+    Tileset() {
+        this->FirstGid = -1;
     }
-    
-    Tileset(SDL_Texture* texture, int firstGid){
-        
+    Tileset(SDL_Texture* texture, int firstGid) {
         this->Texture = texture;
         this->FirstGid = firstGid;
-        
     }
 };
 
-#endif /* level_h */
+
+
+
+#endif
