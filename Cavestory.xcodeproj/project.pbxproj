@@ -19,6 +19,7 @@
 		315323D01D1C73E4003E37E3 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323CF1D1C73E4003E37E3 /* player.cpp */; };
 		315323D41D1C8BFA003E37E3 /* level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323D31D1C8BFA003E37E3 /* level.cpp */; };
 		315323DF1D1CA87A003E37E3 /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323DE1D1CA87A003E37E3 /* tinyxml2.cpp */; };
+		315323E21D1CACC0003E37E3 /* tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 315323E11D1CACC0003E37E3 /* tile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,8 @@
 		315323DC1D1CA7EE003E37E3 /* Map 1.tmx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Map 1.tmx"; path = "../../../../Library/Developer/Xcode/DerivedData/Cavestory-fnbujeikcoufrhbyfcxvhohsjmye/Build/Products/Debug/Map 1.tmx"; sourceTree = "<group>"; };
 		315323DD1D1CA870003E37E3 /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
 		315323DE1D1CA87A003E37E3 /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
+		315323E01D1CAC1C003E37E3 /* tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tile.h; sourceTree = "<group>"; };
+		315323E11D1CACC0003E37E3 /* tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tile.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				315323CB1D19FD93003E37E3 /* animatedsprite.h */,
 				315323CE1D1C72F7003E37E3 /* player.h */,
 				315323D21D1C8AE1003E37E3 /* level.h */,
+				315323E01D1CAC1C003E37E3 /* tile.h */,
 			);
 			name = header;
 			sourceTree = "<group>";
@@ -133,6 +137,7 @@
 				315323CC1D1A2734003E37E3 /* animatedsprite.cpp */,
 				315323CF1D1C73E4003E37E3 /* player.cpp */,
 				315323D31D1C8BFA003E37E3 /* level.cpp */,
+				315323E11D1CACC0003E37E3 /* tile.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				315323DF1D1CA87A003E37E3 /* tinyxml2.cpp in Sources */,
 				315323B81D19BAB9003E37E3 /* graphics.cpp in Sources */,
 				315323AB1D19B721003E37E3 /* main.cpp in Sources */,
+				315323E21D1CACC0003E37E3 /* tile.cpp in Sources */,
 				315323D41D1C8BFA003E37E3 /* level.cpp in Sources */,
 				315323BE1D19C6DD003E37E3 /* input.cpp in Sources */,
 				315323CD1D1A2734003E37E3 /* animatedsprite.cpp in Sources */,
