@@ -166,7 +166,7 @@ void Level::loadMap(std::string mapName, Graphics &graphics){
                             int tilesetWidth, tilesetHeight;
                             SDL_QueryTexture(tls.Texture, NULL, NULL, &tilesetWidth, &tilesetHeight);
                             
-                            int tsxx = gid % (tilesetWidth / tileWidth) - 1;
+                            int tsxx = (gid % (tilesetWidth / tileWidth) - 1);
                             tsxx *= tileWidth;
                             
                             int tsyy = 0;
